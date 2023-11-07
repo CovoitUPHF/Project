@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Covoiturage</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Styles pour la carte */
+    </style>
+</head>
+<body>
+		<nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="recherche.html">Rechercher un trajet</a></li>
+                <li><a href="propose.html">Proposer un trajet</a></li>
+            </ul>
+        </nav>
+    <h1>Recherche de Trajet</h1>
+    <form id="search-form">
+        <label for="departure">Départ :</label>
+        <input type="text" id="departure" name="departure" required>
+        <label for="destination">Destination :</label>
+        <input type="text" id="destination" name="destination" required>
+        <button type="submit">Rechercher</button>
+    </form>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="scriptr.js"></script>
+</body>
+</html>
