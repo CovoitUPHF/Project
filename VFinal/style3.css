@@ -1,0 +1,535 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	background-size: cover;
+	margin: 0;
+    padding: 0;
+	overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+	font-style: italic;
+	font-family: "Okta Neue", sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+	font-style: italic;
+	font-family: "Okta Neue", sans-serif;
+}
+
+/* Style pour le header */
+
+header {
+    background-color: white;
+	background-size: cover; 
+    color: #fff; 
+    padding: 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-and-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-buttons {
+    margin-left: 25px;
+	align-items: left;
+	display: flex;
+}
+
+/* Style pour la navigation */
+
+nav ul {
+    list-style-type: none;
+	margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li button {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; 
+    transition: all 500ms;
+    z-index: 99;
+    padding: 1.2em; 
+    border-radius: 5px; 
+}
+
+nav ul li button:hover::after {
+    width: 120px;
+    height: 60px;
+    border-radius: 10px;
+    transition: all 500ms;
+    bottom: -1px;
+    left: -1px;
+}
+
+nav ul li button:hover {
+    border-radius: 20px;
+    box-shadow: 0 0 35px 5px #5affc0;
+}
+
+
+/* Style pour le logo */
+
+.logo-container {
+    text-align: center;
+	margin-right: auto;
+}
+
+.logo-container img {
+    height: 75px;
+    cursor: pointer;
+}
+
+/* Style pour les boutons d'inscription, de connexion, de profil et de déconnexion */
+
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+#inscription-btn, #connexion-btn {
+    padding: 8px 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#inscription-btn {
+    margin-right: 5px;
+}
+
+#inscription-btn:hover, #connexion-btn:hover {
+    background-color: #218838; 
+}
+
+/* Style pour la bannière avec notre slogan */
+
+.main-image {
+    width: 100%;
+}
+
+.main-image img {
+    width: 100%;
+    max-height: 500px;
+    display: block;
+}
+
+/* Style pour les formulaires */
+
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    font-family: "Okta Neue", sans-serif;
+	box-shadow: 0px 0px 50px #5affc0;
+	outline: 1px solid #2b9962;
+}
+
+.form-container2 {
+    max-width: 400px;
+    margin: 50px auto;
+    font-family: "Okta Neue", sans-serif;
+	width: 20%;
+}
+
+.input-group {
+    margin-bottom: 20px; 
+}
+
+.input-group2 {
+    margin-bottom: 10px;
+	display: flex;
+    justify-content: space-between;
+}
+
+.input-group2 input[type="reset"],
+.input-group2 input[type="submit"] {
+	flex: 0 0 48%;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: bold;
+}
+
+textarea {
+	display: block;
+    margin-bottom: 20px;
+    color: #555;
+    font-family: "Okta Neue", sans-serif;
+	background-color: #e9ecef;
+}
+
+input[type="text"], input[type="submit"], input[type="password"], input[type="email"], input[type="reset"]{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #e9ecef;
+	font-family: "Okta Neue", sans-serif;
+}
+
+input[type="submit"], input[type="reset"]{
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #218838;
+}
+
+input[type="text"]:focus, input[type="submit"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="reset"]{
+    outline: none;
+}
+
+/* Style pour le tableau */
+
+table {
+    width: 60%; 
+    border-collapse: collapse;
+    margin: 20px auto;
+	font-family: "Okta Neue", sans-serif;
+	outline: 1px solid #2b9962;
+	box-shadow: 0px 0px 50px #5affc0;
+}
+
+/* Style pour les cellules d'en-tête */
+
+th {
+    background-color: ;
+	color: #000;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center; 
+}
+
+/* Style pour les cellules de données */
+
+td {
+    padding: 10px;
+	text-align: center;
+}
+
+/* Style pour le footer */
+
+footer {
+    background-color: #f2f2f2;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+	font-family: "Okta Neue", sans-serif;
+}
+
+#texte-footer{
+	list-style: none;
+    padding: 0;
+    margin: 0;
+	display: inline;
+    margin-right: 20px;
+	margin-left: 20px;
+}
+
+footer a {
+    color: blue;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Style pour la roue des réseaux sociaux */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.instagram {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: #cc39a4;
+}
+
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.twitter {
+  margin-top: 1.5em;
+  margin-left: -0.9em;
+  fill: #03a9f4;
+}
+
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.github {
+  margin-top: -0.6em;
+  margin-left: 1.2em;
+}
+
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.discord {
+  margin-top: -0.9em;
+  margin-left: -1.2em;
+  fill: #8c9eff;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+  box-shadow: 1px 1px 0px #eeb1de, 2px 2px 0px #d365b6, 3px 3px 0px #d365b6,
+    4px 4px 0px #d365b6, 5px 5px 0px #d365b6;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #03a9f4;
+  box-shadow: 1px 1px 0px #a1defa, 2px 2px 0px #41bef8, 3px 3px 0px #41bef8,
+    4px 4px 0px #41bef8, 5px 5px 0px #41bef8;
+}
+
+.card2:hover .twitter {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+  box-shadow: 1px 1px 0px rgb(124, 123, 123), 2px 2px 0px #333, 3px 3px 0px #333,
+    4px 4px 0px #333, 5px 5px 0px #333;
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #8c9eff;
+  box-shadow: 1px 1px 0px #bdc2e2, 2px 2px 0px #9ca6e0, 3px 3px 0px #9ca6e0,
+    4px 4px 0px #9ca6e0, 5px 5px 0px #9ca6e0;
+}
+
+.card4:hover .discord {
+  fill: white;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  box-shadow: 1px 1px 0px rgb(179, 175, 175), 2px 2px 0px rgb(179, 175, 175),
+    3px 3px 0px rgb(179, 175, 175), 4px 4px 0px rgb(179, 175, 175),
+    5px 5px 0px rgb(179, 175, 175);
+}
+
+/* Style pour la banniere avec les voitures */
+
+.banniere {
+    background-image: url("image/route.png");
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 25vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+.road {
+    /*border-top: 5px dashed black;*/
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.car {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: auto;
+    position: absolute;
+}
+
+.top-car {
+    bottom: -15px; 
+    right: 0;
+    animation-name: moveCarTop;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+}
+
+.bottom-car {
+    top: -20px;
+    left: 0;
+    animation-name: moveCarBottom;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+@keyframes moveCarTop {
+    0% {
+        right: -150px;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+@keyframes moveCarBottom {
+    0% {
+        left: -150px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* Divers styles qui servent à faire des ajustements sur certaines pages */
+
+.overflow{
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+.br {
+    display: block;
+    margin-bottom: 95px;
+    content: "";
+}
+
+.br2 {
+    display: block;
+    margin-bottom: 3px;
+    content: "";
+}
+
+.br3 {
+    display: block;
+    margin-bottom: 75px;
+    content: "";
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+	font-style: italic;
+	font-family: "Okta Neue", sans-serif;
+}
+
+.centrer{
+	text-align: center;
+	font-family: "Okta Neue", sans-serif;
+}
+
+.paragraphe {
+    font-family: "Okta Neue", sans-serif; /* Choix de la police de caractères */
+    font-size: 16px; /* Taille de la police */
+    line-height: 1.5; /* Hauteur de ligne pour un meilleur espacement entre les lignes */
+    color: #333; /* Couleur du texte */
+    margin: 0 0 20px 0; /* Marge autour du paragraphe (haut, droite, bas, gauche) */
+    padding: 0; /* Pas de remplissage à l'intérieur du paragraphe */
+}
